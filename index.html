@@ -41,7 +41,7 @@
 			var adminName = document.login.username.value;
 			var adminPass = document.login.password.value;
 			if (adminName != 'rosannechoo' || adminPass != 'qwerty') {
-				alert("Only Admin can log in")
+				alert("Wrong combination!")
 				return false;
 			}
       else {
@@ -81,7 +81,7 @@
     <h1>foodtasy♥</h1>
     <p>The place where food lovers gather</p>
     <ul class="masthead-links">
-      <form name = "login" action = "authentication.html" method = "post" onSubmit="return validateForm()">
+      <form name = "login" method = "post" onSubmit="return validateForm()">
         Username: <input type = "text" name = "username"><BR/>
         Password: <input type = "password" name = "password"><BR/>
         <input type = "submit" name = "submit" value = "Submit">
